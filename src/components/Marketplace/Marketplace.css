@@ -1,0 +1,95 @@
+/* ─── Marketplace Styles ─────────────────────────────────────────────────── */
+
+/* Header row: title on left, post button on right */
+.mp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Form title */
+.mp-form-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 14px;
+}
+
+/* Two-column row inside the form */
+.mp-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Full-width search bar with spacing below */
+.mp-search {
+  margin-bottom: 20px;
+}
+
+/* Responsive listing card grid */
+.mp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+/* Individual listing card */
+.mp-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.mp-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* Listing title */
+.mp-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.1px;
+}
+
+/* Price — large and green */
+.mp-price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: -0.3px;
+}
+
+.mp-unit {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+/* Description text */
+.mp-description {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  flex: 1;
+  line-height: 1.55;
+}
+
+/* Card footer: seller name + remove button */
+.mp-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--color-border);
+  padding-top: 12px;
+  margin-top: 2px;
+}
+
+.mp-seller {
+  font-size: 0.83rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
